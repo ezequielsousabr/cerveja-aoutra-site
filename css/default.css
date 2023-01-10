@@ -15,13 +15,43 @@
     box-sizing: border-box;
 }
 
+header{
+    position: relative;
+}
+
+.navbar{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    padding: 18px 26px;
+}
+
+.logo-aoutra{
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: auto;
+}
+
 img{
     filter: contrast(1.2) brightness(1);
+    width: 100%;
+    height: 100%;
 }
 
 .campanha img{
     width: 100%;
     height: auto;
+    z-index: -100;
 }
 
 /* Formatações gerais */
@@ -271,23 +301,14 @@ iframe{
     padding-bottom: 50px;
 }
 
-figure img{
-    background-color: #d40609;
-    border-radius: 50rem;
-    padding: 8px;
-    color: white;
-    width: 40px;
-    height: 40px;
-}
-
 svg{
     font-size: x-large;
     color: white;
-    background-color: #d40609;
+    background-color: #e91317;
     padding: 6px;
     border-radius: 50rem;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height:45px;
 }
 
 .bi{
@@ -301,6 +322,7 @@ a{
     text-decoration: none;
     color: white;
     cursor: pointer;
+    background-color: transparent;
 }
 
 /* Footer - Inicio */
@@ -355,6 +377,8 @@ footer::before{
     text-align: center;
 }
 
-.copyright img{
+.foo-tampinhas{
+    width: auto;
+    height: auto;
     padding: 30px 10px;
 }
