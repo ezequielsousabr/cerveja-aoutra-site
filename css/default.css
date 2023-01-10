@@ -3,18 +3,25 @@
 /* font-family: 'Ubuntu', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+/* Import Bootstrap-icons */
+@import 'bootstrap-icons';
+
 /* Reset da pagina */
 *{
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
-main img{
+img{
+    filter: contrast(1.2) brightness(1);
+}
+
+.campanha img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
 }
 
 /* Formatações gerais */
@@ -59,7 +66,49 @@ p{
     word-spacing: 1px;
 }
 
+/* Google Maps */
+#goomaps{
+    background-color: #c4080b;
+    padding: 50px 20px;
+    margin: auto auto;
+}
+
+.googdescription h3{
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    word-spacing: 1px;
+}
+
+.googdescription p,li{
+    text-align: center;
+    color: white !important;
+    line-height: 30px;
+}
+
+.google-maps{
+    padding: 30px 30px;
+}
+
+.google-maps iframe{
+    max-width: 1250px;
+    width: 100%;
+    height: 720px;
+    margin: auto auto;
+    border: 2px solid #152126;
+    border-radius: none;
+}
+
 /* Formulário - Inicio */
+
+.form-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #form{
     position: relative;
     background-color: rgba(46, 45, 45, 0.3);
@@ -69,20 +118,20 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    align-items: flex-start;
+    gap: 1rem;
     padding: 100px 25px 25px;
 }
 
 fieldset{
-    border: #f4f0f0;
+    border: none;
 }
 
 input{
     border: 1px solid rgba(23,23,23,0.1);
-    padding: 2px 10px;
-    width: 100%;
-    height: 38px;
+    padding: 2px 5px;
+    width: auto;
+    height: 44px;
 }
 
 button{
@@ -92,15 +141,17 @@ button{
     width: 190px;
     height: 100%;
     color: white;
-    text-align: center;
     text-transform: uppercase;
     border-radius: 50rem;
     font-weight: 600;
+    cursor: pointer;
+    margin: auto;
 }
 
 button:hover{
-    background-color: #dd0407;
-    transition: linear 1s;
+    background-color: #b80306;
+    transition: ease .3s;
+    border: 4px solid #b80306;
 }
 
 textarea{
@@ -108,6 +159,7 @@ textarea{
     background-color: #f4f0f0;
     padding: 5px 2px;
     text-align: initial;
+    width: 100%;
 }
 
 label{
@@ -130,7 +182,7 @@ textarea:focus{
 }
 
 input,textarea{
-    border-radius: 8px;
+    border-radius: 2px;
     background-color: rgb(255,255,255);
     color: #636262;
 }
@@ -139,17 +191,17 @@ input,textarea{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 30px;
     width: 100%;
 }
 
-.jpeg-background::before{
+.formulario-background::before{
     position: absolute;
     display: block;
     content:"";
-    background-image: url('../images/rio-de-janeiro-1963744_960_720.jpg');
+    background-image: url('../images/bg-contato-a-outra.jpg');
     background-attachment: local;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,7 +246,7 @@ ul li{
 
 /* Incorpora Youtube - Inicio */
 .incorpora-youtube{
-    padding: 25px 50px 50px;
+    padding: 25px 50px 10px;
 }
 
 .incorpora-youtube h3{
@@ -210,6 +262,45 @@ ul li{
 iframe{
     display: block;
     margin: auto auto;
+}
+
+/* Bootstrap Icons */
+.icons{
+    margin: auto auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+figure img{
+    background-color: #d40609;
+    border-radius: 50rem;
+    padding: 8px;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+svg{
+    font-size: x-large;
+    color: white;
+    background-color: #d40609;
+    padding: 6px;
+    border-radius: 50rem;
+    width: 40px;
+    height: 40px;
+}
+
+.bi{
+    font-size: x-large;
+    color: white;
+    background-color: #d40609;
+    padding: 10px 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }
 
 /* Footer - Inicio */
