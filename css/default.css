@@ -6,6 +6,8 @@
 /* Import Bootstrap-icons */
 @import 'bootstrap-icons';
 
+@import '../css/mobile.css';
+
 /* Reset da pagina */
 *{
     font-family: 'Ubuntu', sans-serif;
