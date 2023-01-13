@@ -54,6 +54,21 @@ img{
     z-index: -100;
 }
 
+.navbar-toogle{
+    max-width: 65px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255,255,255,0.5);
+    padding: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar-toogle:hover{
+    background-color: rgb(255,255,255);
+    transition: ease .4s;
+}
+
 /* Formatações gerais */
 h1,
 h2,
