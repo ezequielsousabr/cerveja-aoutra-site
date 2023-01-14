@@ -71,6 +71,10 @@
         height: auto;
     }
 
+    .incorpora-youtube{
+        padding: 15px 15px !important;
+    }
+
     .google-maps iframe{
         max-width: 100%;
         width: 100%;
