@@ -6,9 +6,8 @@
 /* Fonte Original do site */
 @font-face{
     font-family: "bignoodletitling";
-    src: url("../bignoodletitling/big_noodle_titling.ttf") format('ttf'),
-         url("../bignoodletitling/big_noodle_titling_oblique.ttf") format('ttf');
-    font-weight: 600;
+    src: url("../bignoodletitling/big_noodle_titling.ttf"),
+         url("../bignoodletitling/big_noodle_titling_oblique.ttf");
 }
 
 /* Import Bootstrap-icons */
@@ -18,7 +17,7 @@
 
 /* Reset da pagina */
 *{
-    font-family: "bignoodletitling";
+    font-family: 'Ubuntu', serif;
     font-size: 1rem;
     margin:0;
     padding:0;
@@ -72,14 +71,12 @@ img{
     max-width: 65px;
     width: 100%;
     height: auto;
-    /* background-color: rgba(255,255,255,0.5); */
     padding: 3px;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .navbar-toogle:hover{
-    /* background-color: rgb(255,255,255); */
     transform: scale(1.1);
     transition: ease .4s;
 }
@@ -90,16 +87,21 @@ h2,
 h3,
 h4,
 h5,h6{
-    font-family: "bignoodletitling";
+    font-family: "bignoodletitling", serif !important;
     font-size: xx-large;
+    font-weight: 600 !important;
+    word-spacing: -1px;
+    text-transform: uppercase;
 }
 
-p{
-    font-family: 'Ubuntu', sans-serif;
+p,sub,sup{
+    font-family: 'Ubuntu', serif !important;
     font-size: medium;
     font-weight: 300;
     color: #152126 !important;
 }
+
+
 
 /* Sobre - Inicio */
 .sobre-info{
@@ -118,12 +120,8 @@ p{
 }
 
 .sobre-info h3{
-    font-size: xx-large;
     color: #d2ac67 !important;
-    text-align: left;
     margin-bottom: 24px;
-    text-transform: uppercase;
-    word-spacing: 1px;
 }
 
 /* Google Maps */
@@ -134,12 +132,9 @@ p{
 }
 
 .googdescription h3{
-    font-size: xx-large;
     color: white;
-    text-align: center;
-    text-transform: uppercase;
     padding: 10px 20px;
-    word-spacing: 1px;
+    text-align: center;
 }
 
 .googdescription p,li{
@@ -224,11 +219,11 @@ textarea{
 
 label{
     display: block;
+    font-family: "bignoodletitling", serif !important;
     text-transform: capitalize;
     line-height: 2rem;
     color: white;
     font-weight: bolder;
-    /*text-shadow: 2px 2px 2px #808080;*/
 }
 
 input:focus{
@@ -242,6 +237,8 @@ textarea:focus{
 }
 
 input,textarea{
+    font-family: 'Ubuntu', serif;
+    font-weight: 300;
     border-radius: 2px;
     background-color: rgb(255,255,255);
     color: #636262;
@@ -288,9 +285,7 @@ input,textarea{
 .sac-info h3{
     font-size: x-large;
     color: white;
-    text-shadow: 2px 2px 2px black;
     margin-bottom: 14px;
-    text-transform: uppercase;
 }
 
 .sac-info p{
@@ -300,6 +295,7 @@ input,textarea{
 }
 
 ul li{
+    font-family: 'Ubuntu', serif !important;
     list-style: none;
     color: white;
 }
@@ -310,13 +306,9 @@ ul li{
 }
 
 .incorpora-youtube h3{
-    font-size: xx-large;
     color: #152126;
     text-align: center;
-    text-transform: uppercase;
     padding: 10px 20px;
-    font-weight: 600;
-    word-spacing: 1px;
 }
 
 iframe{
@@ -387,12 +379,9 @@ footer::before{
 }
 
 .copyright h3{
-    font-size: xx-large;
     color: white;
-    text-transform: uppercase;
     text-align: center;
     margin-bottom: 18px;
-    font-weight: 600;
 }
 
 .copy-text{
