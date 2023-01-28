@@ -13,9 +13,8 @@
 /* Import Bootstrap-icons */
 @import 'bootstrap-icons';
 
-@import '../css/mobile.css';
-
 /* Reset da pagina */
+
 *{
     font-family: 'Ubuntu', serif;
     font-size: 1rem;
@@ -38,21 +37,23 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: space-between;
     z-index: 100;
     padding: 18px 26px;
+    background-color: transparent;
+}
+
+.logo{
+    position: absolute;
+    z-index: 100
 }
 
 .logo-aoutra{
+    position: relative;
     width: 100%;
     height: 100%;
     max-width: 100px;
     max-height: auto;
-}
-
-.dropdown-suspenso{
-    background-color: #333333;
 }
 
 img{
@@ -68,6 +69,7 @@ img{
 }
 
 .navbar-toogle{
+    position: absolute;
     max-width: 65px;
     width: 100%;
     height: auto;
