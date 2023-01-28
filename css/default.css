@@ -101,10 +101,9 @@ p,sub,sup{
     color: #152126 !important;
 }
 
+/* Sobre Inicio */
 
-
-/* Sobre - Inicio */
-.sobre-info{
+.sobre-info {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -116,7 +115,6 @@ p,sub,sup{
 
 .sobre-info img{
     width: 680px;
-    height: 100%;
 }
 
 .sobre-info h3{
@@ -179,6 +177,7 @@ form{
 }
 
 fieldset{
+    width: 100%;
     border: none;
 }
 
@@ -214,7 +213,6 @@ textarea{
     background-color: #f4f0f0;
     padding: 5px 2px;
     text-align: initial;
-    width: 100%;
 }
 
 label{
@@ -242,6 +240,7 @@ input,textarea{
     border-radius: 2px;
     background-color: rgb(255,255,255);
     color: #636262;
+    width: 100%;
 }
 
 .fieldset-default{
