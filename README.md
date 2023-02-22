@@ -5,11 +5,11 @@
 
 ### Etapas
 
-[x] Header
-[ ] Header (Criação do menu-dropdown)
-[x] Banners de Campanhas
-[ ] Criação de Slides em Javascript
-[x] Seção Formulário
-[x] Seção Sobre
-[x] Footer
-[ ] Ajustes finais
+- [x] Header
+- [ ] Header (Criação do menu-dropdown)
+- [x] Banners de Campanhas
+- [ ] Criação de Slides em Javascript
+- [x] Seção Formulário
+- [x] Seção Sobre
+- [x] Footer
+- [ ] Ajustes finais
