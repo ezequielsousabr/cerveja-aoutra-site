@@ -2,10 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./css/default.css" type="text/css">
-    <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="/css/default.css" type="text/css">
+    <link rel="stylesheet" href="/css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="/css/slide.css" type="text/css">
     <link rel="icon" href="/images/tampinhas.png">
     <title>A Outra - Chope na Lata</title>
 </head>
@@ -15,10 +16,10 @@
             <nav class="navbar">
                 <figure class="logo">
                     <a href="#" target="_self">
-                    <img class="logo-aoutra" src="./images/logo-150x111.png" alt="Cerveja a Outra" /></a>
+                    <img class="logo-aoutra" src="/images/logo-150x111.png" alt="Cerveja a Outra" /></a>
                 </figure>
                 <div class="dropdown">
-                    <img class="navbar-toogle" src="./images/menu.png" alt="menu-dropdown" />
+                    <img class="navbar-toogle" src="/images/menu.png" alt="menu-dropdown" />
                     <div class="dropdown-suspenso">
                         <span>Home</span>
                         <span>A outra</span>
@@ -33,7 +34,7 @@
         </header>
         <section>
             <div class="campanha">
-                <img src="./images/a-outra-popozuda.jpg" alt="Cerveja a Outra" />
+                <img src="/images/a-outra-popozuda.jpg" alt="Cerveja a Outra" />
             </div>
         </section>
         <section id="sobre">
@@ -43,13 +44,28 @@
                     <p>É cerveja da alegria, do sorriso, da festa. A outra é a cerveja de todos, todos que trabalham no dia a dia para poder ter grana no bolso e tomar uma no boteco. A outra é dignidade de ir levando a vida na luta com sorriso no rosto e fé no futuro. A outra é o futebol, é o churrasquinho, é funk, é samba. A outra é baile no final de semana, a quadra da escola, o campinho, o barulho, a roda de samba e o pancadão. A outra é a cara do Brasil, é a praia, é a ginga, é a beleza da mulher.</p>
                 </div>
                 <div>
-                    <img src="./images/pack-a-outra.jpg" alt="Cerveja a Outra" />
+                    <img src="/images/pack-a-outra.jpg" alt="Cerveja a Outra" />
                 </div>
             </div>
         </section>
         <section>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                  <img src="/images/chopp-a-outra-1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                  <img src="/images/chopp-a-outra-7.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                  <img src="/images/chopp-a-outra-5.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+        </section>
+        <section>
             <div class="campanha">
-                <img src="./images/campanha-a-outra-popozuda.jpg" alt="Cerveja a Outra" />
+                <img src="/images/campanha-a-outra-popozuda.jpg" alt="Cerveja a Outra" />
             </div>
         </section>
         <section id="goomaps">
@@ -77,26 +93,26 @@
                 <div class="form-align">
                     <form action="#" method="post">
                         <fieldset class="fieldset-default">
-                            <div>
-                                <label for="name">Nome</label>
-                                <input type="text" required>
+                            <div class="labelInput">
+                                <label for="name" aria-label="Nome">Nome</label>
+                                <input type="text" aria-required aria-placeholder="Diga-nos seu nome completo" class="nome" required />
                             </div>
-                            <div>
-                                <label for="email">Email</label>
-                                <input type="email" required>
+                            <div class="labelInput">
+                                <label for="email" aria-label="Email">Email</label>
+                                <input type="email" class="email" aria-required aria-placeholder="Forneça seu endereço de email" required />
                             </div>
-                            <div>
-                                <label for="assunto">Assunto</label>
-                                <input type="text">
+                            <div class="labelInput">
+                                <label for="assunto" aria-label="Assunto">Assunto</label>
+                                <input type="text" class="assunto" aria-placeholder="Assunto que deseja atendimento" />
                             </div>
                         </fieldset>
                         <fieldset>
                             <div>
-                                <label>Descrição</label>
-                                <textarea rows="10"></textarea>
+                                <label for="descricao" aria-label="Descricao">Descrição</label>
+                                <textarea rows="10" maxlength="200" aria-placeholder="Forneça uma breve descrição de até 200 palavras"></textarea>
                             </div>
                         </fieldset>
-                        <button name="enviar" type="submit">Enviar</button>
+                        <button id="enviar" type="submit">Enviar</button>
                     </form>
                 </div>
                 <div class="sac-info">
@@ -152,10 +168,12 @@
                     <p>Cerveja a Outra 2022 - Todos os direitos reservados.</p>
                     <p>Beba com moderação.</p>
                 </div>
-                <img class="foo-tampinhas" src="./images/tampinhas.png" alt="Cerveja a Outra" />
+                <img class="foo-tampinhas" src="/images/tampinhas.png" alt="Cerveja a Outra" />
             </div>
         </footer>
     </div>
-    <script src="./js/menu-dropdown.js"></script>
+    <script src="/js/menu-dropdown.js"></script>
+    <script src="/js/slide.js"></script>
+    <script src="/js/validadorFormulario.js"></script>
 </body>
 </html>

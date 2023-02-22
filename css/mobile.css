@@ -1,4 +1,4 @@
-@import '../css/dropdown.css';
+@import '/css/dropdown.css';
 
 @media(max-width: 768px) {
     .navbar-toogle{
@@ -15,7 +15,7 @@
     h4,
     h5,
     h6{
-        font-size: 1.5rem !important;
+        font-size: 1.5rem;
     }
 
     p{
@@ -50,6 +50,14 @@
 
     .sobre-info {
         flex-wrap: wrap !important;
+    }
+
+    .sobre-info h3{
+        font-size: 2rem !important;
+    }
+
+    .mySlides img{
+        height: auto !important;
     }
 
     .fieldset-default{

@@ -6,8 +6,8 @@
 /* Fonte Original do site */
 @font-face{
     font-family: "bignoodletitling";
-    src: url("../bignoodletitling/big_noodle_titling.ttf"),
-         url("../bignoodletitling/big_noodle_titling_oblique.ttf");
+    src: url("/bignoodletitling/big_noodle_titling.ttf"),
+         url("/bignoodletitling/big_noodle_titling_oblique.ttf");
 }
 
 /* Import Bootstrap-icons */
@@ -43,6 +43,10 @@ header{
     background-color: transparent;
 }
 
+.open{
+    background-color: #333333;
+}
+
 .logo{
     position: absolute;
     z-index: 100
@@ -70,7 +74,7 @@ img{
 
 .navbar-toogle{
     position: absolute;
-    max-width: 65px;
+    max-width: 48px;
     width: 100%;
     height: auto;
     padding: 3px;
@@ -90,7 +94,7 @@ h3,
 h4,
 h5,h6{
     font-family: "bignoodletitling", serif !important;
-    font-size: xx-large;
+    font-size: 2rem !important;
     font-weight: 600 !important;
     word-spacing: -1px;
     text-transform: uppercase;
@@ -120,6 +124,7 @@ p,sub,sup{
 }
 
 .sobre-info h3{
+    font-size: 3rem !important;
     color: #d2ac67 !important;
     margin-bottom: 24px;
 }
@@ -217,6 +222,10 @@ textarea{
     text-align: initial;
 }
 
+.labelInput{
+    width: 100%;
+}
+
 label{
     display: block;
     font-family: "bignoodletitling", serif !important;
@@ -238,11 +247,12 @@ textarea:focus{
 
 input,textarea{
     font-family: 'Ubuntu', serif;
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 2px;
     background-color: rgb(255,255,255);
-    color: #636262;
+    color: #777575;
     width: 100%;
+    font-size: 14px;
 }
 
 .fieldset-default{
@@ -259,7 +269,7 @@ input,textarea{
     position: absolute;
     display: block;
     content:"";
-    background-image: url('../images/bg-contato-a-outra.jpg');
+    background-image: url('/images/bg-contato-a-outra.jpg');
     background-attachment: local;
     background-position: center;
     background-repeat: no-repeat;
@@ -359,7 +369,7 @@ footer::before{
     display: block;
     position: absolute;
     content: "";
-    background-image:url('../images/tarja-final.jpg');
+    background-image:url('/images/tarja-final.jpg');
     background-attachment: local;
     background-position-y: -295px;
     background-size: cover;
@@ -383,6 +393,7 @@ footer::before{
     color: white;
     text-align: center;
     margin-bottom: 18px;
+    font-size: 3rem !important;
 }
 
 .copy-text{
