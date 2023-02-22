@@ -10,18 +10,18 @@
 ### Outros Editores
 
 ```py
-python -m http.server port 4000
+python -m http.server 4000
 ```
 
 > Necessário Python2 ou Python3 instalados. Escolha a porta de sua escolha: http, https.
 
 ### Etapas
 
-[x] Header
-[ ] Header (Criação do menu-dropdown)
-[x] Banners de Campanhas
-[x] Criação de Slides em Javascript
-[x] Seção Formulário
-[x] Seção Sobre
-[x] Footer
-[ ] Ajustes finais
+- [x] Header
+- [ ] Header (Criação do menu-dropdown)
+- [x] Banners de Campanhas
+- [x] Criação de Slides em Javascript
+- [x] Seção Formulário
+- [x] Seção Sobre
+- [x] Footer
+- [ ] Ajustes finais
